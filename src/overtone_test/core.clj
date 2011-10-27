@@ -12,7 +12,8 @@
 ;(piano (note :e5))
 ;(piano (note :g5))
 
-
+;; Note: You will need to have downloaded the piano samples
+;; in order for this to work. TODO: where from???
 (def piano-samples (load-samples "~/MIS_Stereo_Piano/Piano/*LOUD*"))
 (defn matching-notes
   [note]
