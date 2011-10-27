@@ -8,12 +8,17 @@
 
 (defonce server (boot-external-server))
 
+;https://github.com/overtone/overtone/blob/master/examples/extemp_piano.clj
+;http://blackhole12.newgrounds.com/news/post/92464
+
 ;(piano (note :c5))
 ;(piano (note :e5))
 ;(piano (note :g5))
 
 ;; Note: You will need to have downloaded the piano samples
-;; in order for this to work. TODO: where from???
+;; in order for this to work. 
+;https://github.com/overtone/overtone/blob/master/examples/extemp_piano.clj
+;http://blackhole12.newgrounds.com/news/post/92464
 (def piano-samples (load-samples "~/MIS_Stereo_Piano/Piano/*LOUD*"))
 (defn matching-notes
   [note]
